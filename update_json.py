@@ -5,12 +5,12 @@ import os
 from datetime import datetime
 
 def prepare_description(text):
-    text = re.sub('<[^<]+?>', '', text)  # Remove HTML tags
-    text = re.sub(r'#{1,6}\s?', '', text)  # Remove markdown header tags
-    text = re.sub(r'\*{2}', '', text)  # Remove all occurrences of two consecutive asterisks
-    text = re.sub(r'(?<=\r|\n)-', '•', text)  # Only replace - with • if it is preceded by \r or \n
-    text = re.sub(r'`', '"', text)  # Replace ` with "
-    text = re.sub(r'\r\n\r\n', '\r \n', text)  # Replace \r\n\r\n with \r \n (avoid incorrect display of the description regarding paragraphs)
+    text = re.sub('<[^<]+?>', '', text) # Remove HTML tags
+    text = re.sub(r'#{1,6}\s?', '', text) # Remove markdown header tags
+    text = re.sub(r'\*{2}', '', text) # Remove all occurrences of two consecutive asterisks
+    text = re.sub(r'(?<=\r|\n)-', '•', text) # Only replace - with • if it is preceded by \r or \n
+    text = re.sub(r'`', '"', text) # Replace ` with "
+    text = re.sub(r'\r\n\r\n', '\r \n', text) # Replace \r\n\r\n with \r \n (avoid incorrect display of the description regarding paragraphs)
     return text
 
 def fetch_latest_release(repo_url):
@@ -67,7 +67,7 @@ def update_json_file(json_file, latest_release):
     download_url = None
     size = None
     for asset in assets:
-        if asset["name"] == f"com.kdt.livecontainer_{version}.ipa":  # Updated app ID
+        if asset["name"] == f"com.kdt.livecontainer_{version}.ipa":
             download_url = asset["browser_download_url"]
             size = asset["size"]
             break
@@ -104,15 +104,15 @@ def update_json_file(json_file, latest_release):
     news_identifier = f"release-{full_version}"
     date_string = date_obj.strftime("%d/%m/%y")
     news_entry = {
-        "appID": "com.kdt.livecontainer",  # Updated app ID
+        "appID": "com.kdt.livecontainer",
         "caption": f"Update of LiveContainer just got released!",
         "date": latest_release["published_at"],
         "identifier": news_identifier,
-        "imageURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/release.png",  # Updated repo path
+        "imageURL": "https://raw.githubusercontent.com/khanhduytran0/LiveContainer/main/screenshots/release.png",
         "notify": True,
         "tintColor": "#0784FC",
         "title": f"{full_version} - LiveContainer  {date_string}",
-        "url": f"https://github.com/DavidAdelG/LiveContainer/releases/tag/{tag}"  # Updated repo path
+        "url": f"https://github.com/khanhduytran0/LiveContainer/releases/tag/{tag}"
     }
 
     news_entry_exists = any(item["identifier"] == news_identifier for item in data["news"])
@@ -128,7 +128,7 @@ def update_json_file(json_file, latest_release):
         raise
 
 def main():
-    repo_url = "DavidAdelG/LiveContainer"  # Updated repository path
+    repo_url = "khanhduytran0/LiveContainer"
     json_file = "apps.json"
 
     try:
