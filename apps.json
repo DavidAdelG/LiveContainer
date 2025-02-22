@@ -54,20 +54,27 @@
       "bundleIdentifier": "com.kdt.livecontainer",
       "category": "utilities",
       "developerName": "DavidAdelG",
-      "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.2.59/com.kdt.livecontainer_3.2.59.ipa",
+      "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.2.60/com.kdt.livecontainer_3.2.60.ipa",
       "iconURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/Resources/AppIcon76x76.png",
       "localizedDescription": "Run iOS app without actually installing it!",
       "name": "LiveContainer",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/1.png"
       ],
-      "size": 3141808,
+      "size": 3154655,
       "subtitle": "Run iOS app without actually installing it!",
       "tintColor": "#0784FC",
-      "version": "3.2.59",
-      "versionDate": "2025-02-17",
-      "versionDescription": "Add don't load tweakloader option",
+      "version": "3.2.60",
+      "versionDate": "2025-02-22",
+      "versionDescription": "fix https://github.com/khanhduytran0/LiveContainer/issues/39, add detection for signing failure & corrupted info.plist, add support for LiveExec32",
       "versions": [
+        {
+          "version": "3.2.60",
+          "date": "2025-02-22",
+          "localizedDescription": "fix https://github.com/khanhduytran0/LiveContainer/issues/39, add detection for signing failure & corrupted info.plist, add support for LiveExec32",
+          "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.2.60/com.kdt.livecontainer_3.2.60.ipa",
+          "size": 3154655
+        },
         {
           "version": "3.2.59",
           "date": "2025-02-17",
@@ -140,6 +147,17 @@
       "tintColor": "#0784FC",
       "title": "3.2.59 - LiveContainer  17/02/25",
       "url": "https://github.com/DavidAdelG/LiveContainer/releases/tag/3.2.59"
+    },
+    {
+      "appID": "com.kdt.livecontainer",
+      "caption": "Update of LiveContainer just got released!",
+      "date": "2025-02-22T14:10:17Z",
+      "identifier": "release-3.2.60",
+      "imageURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/release.png",
+      "notify": true,
+      "tintColor": "#0784FC",
+      "title": "3.2.60 - LiveContainer  22/02/25",
+      "url": "https://github.com/DavidAdelG/LiveContainer/releases/tag/3.2.60"
     }
   ],
   "subtitle": "LiveContainer official Altstore source.",
