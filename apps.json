@@ -54,20 +54,27 @@
       "bundleIdentifier": "com.kdt.livecontainer",
       "category": "utilities",
       "developerName": "DavidAdelG",
-      "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.2.63/com.kdt.livecontainer_3.2.63.ipa",
+      "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.3.0/com.kdt.livecontainer_3.3.0.ipa",
       "iconURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/Resources/AppIcon76x76.png",
       "localizedDescription": "Run iOS app without actually installing it!",
       "name": "LiveContainer",
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/1.png"
       ],
-      "size": 3149172,
+      "size": 3155476,
       "subtitle": "Run iOS app without actually installing it!",
       "tintColor": "#0784FC",
-      "version": "3.2.63",
-      "versionDate": "2025-03-07",
-      "versionDescription": "General enhancement.",
+      "version": "3.3.0",
+      "versionDate": "2025-03-14",
+      "versionDescription": "[3.3.0, implement](https://github.com/hugeBlack/LiveContainer/commit/e981723192c0216020da5683bfa034c4b6a1f870) https://github.com/khanhduytran0/LiveContainer/issues/385",
       "versions": [
+        {
+          "version": "3.3.0",
+          "date": "2025-03-14",
+          "localizedDescription": "[3.3.0, implement](https://github.com/hugeBlack/LiveContainer/commit/e981723192c0216020da5683bfa034c4b6a1f870) https://github.com/khanhduytran0/LiveContainer/issues/385",
+          "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.3.0/com.kdt.livecontainer_3.3.0.ipa",
+          "size": 3155476
+        },
         {
           "version": "3.2.63",
           "date": "2025-03-07",
@@ -194,6 +201,17 @@
       "tintColor": "#0784FC",
       "title": "3.2.63 - LiveContainer  07/03/25",
       "url": "https://github.com/DavidAdelG/LiveContainer/releases/tag/3.2.63"
+    },
+    {
+      "appID": "com.kdt.livecontainer",
+      "caption": "Update of LiveContainer just got released!",
+      "date": "2025-03-14T12:58:33Z",
+      "identifier": "release-3.3.0",
+      "imageURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/release.png",
+      "notify": true,
+      "tintColor": "#0784FC",
+      "title": "3.3.0 - LiveContainer  14/03/25",
+      "url": "https://github.com/DavidAdelG/LiveContainer/releases/tag/3.3.0"
     }
   ],
   "subtitle": "LiveContainer official Altstore source.",
