@@ -536,7 +536,7 @@ extension LCUtils {
                 }
                 let inodeNumber = try fm.attributesOfItem(atPath: fileURL.path)[.systemFileNumber] as? NSNumber
                 if let fileInodeNumber = tweakFileINodeRecord[fileURL.lastPathComponent] {
-                    if(fileInodeNumber != inodeNumber || checkCodeSignature((fileURL.path as NSString).utf8String)) {
+                    if(fileInodeNumber != inodeNumber || !checkCodeSignature((fileURL.path as NSString).utf8String)) {
                         signNeeded = true
                         break
                     }
@@ -790,7 +790,7 @@ extension LCUtils {
             }
             
             return false
-        } else if (jitEnabler == .JITStreamerEB) {
+        } else if (jitEnabler == .JITStreamerEB || jitEnabler == .JITStreamerEBLegacy) {
             var JITStresmerEBAddress = groupUserDefaults.string(forKey: "LCSideJITServerAddress") ?? ""
             if JITStresmerEBAddress.isEmpty {
                 JITStresmerEBAddress = "http://[fd00::]:9172"
@@ -826,8 +826,17 @@ extension LCUtils {
                     return false
                 }
                 
-                // relaunch and let the tweakload to do the attatch request
-                return true
+                if jitEnabler == .JITStreamerEB {
+                    // relaunch and let the tweakload to do the attatch request
+                    return true
+                } else {
+                    // open safari to use /launch_app api
+                    if let mountStatusUrl = URL(string: "\(JITStresmerEBAddress)/launch_app/\(Bundle.main.bundleIdentifier!)") {
+                        onServerMessage?("JIT acquisition will continue in the default browser.")
+                        await UIApplication.shared.open(mountStatusUrl)
+                    }
+                    return false
+                }
 
             } catch {
                 onServerMessage?("Failed to contact JitStreamer-EB server: \(error)")
