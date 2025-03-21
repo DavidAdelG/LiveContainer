@@ -6,15 +6,15 @@
       "bundleIdentifier": "com.kdt.livecontainer",
       "developerName": "DavidAdelG",
       "subtitle": "Run iOS app without actually installing it!",
-      "version": "3.3.1",
-      "versionDate": "2025-03-17",
-      "versionDescription": "\u26a0\ufe0fThis version \u26a0\ufe0fREQUIRES\u26a0\ufe0f SideStore 0.6.0+ / AltStore 2.0+ to install.\r\nNew Features\r\nAdapt JitStreamer-EB 0.2.4 Protocol\r \nLiveContainer is now compatible with JitStreamer-EB 0.2.4. Now JIT acquisition happens after app launch, so LiveContainer will show an alert to tell you whether JIT is successfully acquired.\r \nSee [3.3.0](https://github.com/DavidAdelG/LiveContainer/releases/3.3.0) for more new features.",
-      "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.3.1/com.kdt.livecontainer_3.3.1.ipa",
+      "version": "3.3.50",
+      "versionDate": "2025-03-21",
+      "versionDescription": "",
+      "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.3.50/com.kdt.livecontainer_3.3.50.ipa",
       "localizedDescription": "Run iOS app without actually installing it!",
       "iconURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/Resources/AppIcon76x76.png",
       "tintColor": "#0784FC",
       "category": "utilities",
-      "size": 3146069,
+      "size": 3145686,
       "screenshotURLs": [
         "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/1.png"
       ],
@@ -68,6 +68,13 @@
         }
       },
       "versions": [
+        {
+          "version": "3.3.50",
+          "date": "2025-03-21",
+          "localizedDescription": "",
+          "downloadURL": "https://github.com/DavidAdelG/LiveContainer/releases/download/3.3.50/com.kdt.livecontainer_3.3.50.ipa",
+          "size": 3145686
+        },
         {
           "version": "3.3.1",
           "date": "2025-03-17",
@@ -206,6 +213,17 @@
       "tintColor": "#0784FC",
       "title": "3.3.1 - LiveContainer  17/03/25",
       "url": "https://github.com/DavidAdelG/LiveContainer/releases/tag/3.3.1"
+    },
+    {
+      "appID": "com.kdt.livecontainer",
+      "caption": "Update of LiveContainer just got released!",
+      "date": "2025-03-21T23:48:28Z",
+      "identifier": "release-3.3.50",
+      "imageURL": "https://raw.githubusercontent.com/DavidAdelG/LiveContainer/main/screenshots/release.png",
+      "notify": true,
+      "tintColor": "#0784FC",
+      "title": "3.3.50 - LiveContainer  21/03/25",
+      "url": "https://github.com/DavidAdelG/LiveContainer/releases/tag/3.3.50"
     }
   ],
   "subtitle": "LiveContainer official Altstore source.",
